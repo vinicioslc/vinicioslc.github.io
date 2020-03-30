@@ -1,7 +1,7 @@
 ---
 title: Docker compose "develop enviroment" wont start with nodemon
 author: Vinicios
-date: '2020-01-25'
+date: "2020-01-25"
 draft: false
 hero: ./thumb.jpg
 path: /posts/docker-compose-nodemon
