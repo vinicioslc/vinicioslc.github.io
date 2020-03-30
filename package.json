@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "posts:validate": "frontmatter-validator --path ./src/content --schema ./.frontmatter-schema",
-    "build": "npm run posts:validate && gatsby build",
+    "build": "gatsby build",
     "develop": "npm run posts:validate && gatsby develop",
     "dev": "npm run posts:validate && npm run develop",
     "format": "prettier --write src/**/*.{js,jsx}",
