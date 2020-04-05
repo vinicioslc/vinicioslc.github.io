@@ -1,0 +1,16 @@
+{
+  "ignored": [
+    ""
+  ],
+  "schema": {
+    "title": "Default Title",
+    "author": "Vinicios",
+    "date": "2020-01-01",
+    "draft": true,
+    "lang": "PT",
+    "path": "/posts/{FILENAME}",
+    "tags": [
+      "Development"
+    ]
+  }
+}
