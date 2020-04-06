@@ -46,6 +46,31 @@ const MarkdownContent = styled.div`
     }
   }
 `
+const HeroIMG = styled.div`
+  border-radius: 12px;
+  width: 100%;
+  height: 40vh;
+  background-clip: initial;
+  background-attachment: initial;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
+  background-size: cover;
+  background-image: url(${(props) => props.imag});
+`
+const ContentHero = ({ children, hero }) => {
+  let imageURL = null
+
+  if (hero && hero.publicURL) {
+    imageURL = hero.publicURL
+  }
+
+  if (imageURL) {
+    return <HeroIMG imag={imageURL} height={"10%"} width={"100%"}></HeroIMG>
+  } else {
+    return <div src="empty_hero_img"></div>
+  }
+}
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -56,6 +81,7 @@ export default ({ data }) => {
         description={post.frontmatter.description || post.excerpt}
         keywords={post.frontmatter.tags || []}
       />
+      <ContentHero hero={post.frontmatter.hero}></ContentHero>
       <Content>
         <MarkedHeader>{post.frontmatter.title}</MarkedHeader>
         <HeaderDate>
@@ -79,6 +105,9 @@ export const pageQuery = graphql`
         path
         title
         tags
+        hero {
+          publicURL
+        }
       }
       fields {
         readingTime {
