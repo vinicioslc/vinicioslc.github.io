@@ -42,7 +42,11 @@ const LandingBio = () => (
       <OuterContainer>
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-          <Description>{data.site.siteMetadata.subtitle}</Description>
+          <Description>
+            “Life without endeavor is like entering a jewel mine and coming out
+            with empty hands.”
+          </Description>
+          <h2>~ Japanese Proverb</h2>
         </Container>
       </OuterContainer>
     )}

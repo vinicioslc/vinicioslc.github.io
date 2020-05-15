@@ -1,9 +1,9 @@
 ---
 title: Integrando Sistemas Legados com Filas e API's
 author: Vinny
-date: "2019-09-11"
+date: '2019-09-11'
 hero: ./images/price-arquitetura.png
-draft: false
+draft: true
 lang: PT
 tags:
   - Guia
@@ -22,11 +22,11 @@ O cenário consistia de:
 
 VPS pequeno rodando :
 
-- API - Monolito em NodeJS
-- Outros serviços
+- Monolito em NodeJS
+- Serviços relacionados ao sistema
 - Banco de dados - Uma instância em MariaDB
 
-No lado de fora havia múltiplos sistemas cada um do seu jeito:
+No lado de fora havia múltiplos sistemas cada um com seu modo operantis:
 
 - Sistemas em delphi
 - Banco de dados locais em Firebird
@@ -35,7 +35,7 @@ No lado de fora havia múltiplos sistemas cada um do seu jeito:
 Após possuir os dados seria necessário mais um passo:
 
 - Processamento pesado em vendas passadas para regras em cima da precificação.
-- Processamento de produtos como nome código de barras para verificação de sua validade.
+- Processamento de produtos como nome, código de barras, para verificação se é um produto válido (com nome e descrição corretos).
 
 ## O desafio.
 

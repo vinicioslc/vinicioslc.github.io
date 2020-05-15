@@ -46,10 +46,7 @@ const Layout = ({ children }) => (
         <Content>
           <main>{children}</main>
           <Footer>
-            <p>
-              © {new Date().getFullYear()}, With
-              {` `}
-            </p>
+            <p>© {new Date().getFullYear()}, With</p>
             <GatsbyLink href="https://www.gatsbyjs.org">love</GatsbyLink>
           </Footer>
         </Content>
