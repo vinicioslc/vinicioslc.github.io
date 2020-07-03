@@ -9,7 +9,7 @@ const Content = styled.div`
   font-size: 1.2rem;
 `
 
-const NavLink = styled(Link)`
+const NavLink = styled.a`
   color: black;
   margin-left: 15px;
   text-decoration: none;
@@ -79,7 +79,9 @@ const Header = ({ siteTitle }) => (
         <HomeLink to="/" alt={siteTitle}>
           Home
         </HomeLink>
-        <NavLink to="/blog">Blog</NavLink>
+        <NavLink target="__blank" href="https://medium.com/@vinicioslc">
+          Posts
+        </NavLink>
         <GitHubLink target="__blank" href="https://github.com/vinicioslc">
           GitHub
         </GitHubLink>
