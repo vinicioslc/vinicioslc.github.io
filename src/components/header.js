@@ -9,7 +9,7 @@ const Content = styled.div`
   font-size: 1.2rem;
 `
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   color: black;
   margin-left: 15px;
   text-decoration: none;
@@ -35,7 +35,7 @@ const NavLink = styled.a`
   }
 `
 
-const GitHubLink = styled.a`
+const CommonLink = styled.a`
   color: black;
   margin-left: 15px;
   text-decoration: none;
@@ -79,19 +79,18 @@ const Header = ({ siteTitle }) => (
         <HomeLink to="/" alt={siteTitle}>
           Home
         </HomeLink>
-        <NavLink target="__blank" href="https://medium.com/@vinicioslc">
+        <CommonLink target="__blank" href="https://medium.com/@vinicioslc">
           Posts
-        </NavLink>
-        <GitHubLink target="__blank" href="https://github.com/vinicioslc">
+        </CommonLink>
+        <CommonLink target="__blank" href="https://github.com/vinicioslc">
           GitHub
-        </GitHubLink>
-
-        <GitHubLink
+        </CommonLink>
+        <CommonLink
           target="__blank"
           href="https://www.linkedin.com/in/vinicioslc"
         >
           Curriculum
-        </GitHubLink>
+        </CommonLink>
       </p>
     </Content>
   </SiteHeader>
