@@ -2,5 +2,5 @@
 # These rules will change if you change your site’s custom domains or HTTPS settings
 
 # Redirect default Netlify subdomain to primary domain
-http://vinicioslc-blog.netlify.com/* http://vinicios.me/:splat 301!
-https://vinicioslc-blog.netlify.com/* https://vinicios.me/:splat 301!
+http://vinicioslc-blog.netlify.com/* http://vinicios.dev/:splat 301!
+https://vinicioslc-blog.netlify.com/* https://vinicios.dev/:splat 301!
